@@ -1,0 +1,34 @@
+
+
+a {
+  color: #00B7FF;
+}
+
+.hiddenclass{
+  display: none;
+}
+
+.logo_design{
+  display: inline-block;
+  max-width: 200px;
+  padding: 5px 15px;
+  background: white;
+}
+
+.logo_design > img{
+  height: auto;
+  width: 100%;
+}
+
+.invoice_image{
+  max-width: 63%;
+  /* display: inline-block; */
+  padding: 8px 15px;
+  background: white;
+}
+
+.invoice_image > img {
+  width: 100%;
+  height: auto;
+
+}

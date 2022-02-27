@@ -1,0 +1,83 @@
+<div class="d-flex flex-row flex-column-fluid container">
+<!--begin::Content Wrapper-->
+<div class="main d-flex flex-column flex-row-fluid">
+    <div class="content flex-column-fluid" id="kt_content">
+      
+        <!--begin::Card-->
+        <div class="card card-custom">
+            <div class="card-header flex-wrap border-0 pt-6 pb-0">
+                <div class="card-title">
+                    <h3 class="card-label">Employee List</h3>
+                    <ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm" >
+                        <li class="breadcrumb-item">
+                            <a href="/employeePage" class="text-muted">Employees</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#" class="text-muted">Add Employees</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-toolbar">
+                   
+                    <!--begin::Button-->
+                    <a href="addEmployee" class="btn btn-primary font-weight-bolder">
+                    <span class="svg-icon svg-icon-md">
+                        <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Flatten.svg-->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <rect x="0" y="0" width="24" height="24" />
+                                <circle fill="#000000" cx="9" cy="15" r="6" />
+                                <path d="M8.8012943,7.00241953 C9.83837775,5.20768121 11.7781543,4 14,4 C17.3137085,4 20,6.6862915 20,10 C20,12.2218457 18.7923188,14.1616223 16.9975805,15.1987057 C16.9991904,15.1326658 17,15.0664274 17,15 C17,10.581722 13.418278,7 9,7 C8.93357256,7 8.86733422,7.00080962 8.8012943,7.00241953 Z" fill="#000000" opacity="0.3" />
+                            </g>
+                        </svg>
+                        <!--end::Svg Icon-->
+                    </span>Add New Employee</a>
+                    <!--end::Button-->
+                </div>
+            </div>
+            <div class="card-body" style="padding: 2rem 1.25rem;">
+                <!--begin: Search Form-->
+                <!--begin::Search Form-->
+                <div class="mb-7">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3" style="padding-left: 34.5px;">
+                            <div class="row align-items-center">
+                                <div class="my-2 my-md-0">
+                                    <div class="input-icon">
+                                        <input type="text" class="form-control" placeholder="Search..." id="kt_datatable_search_query" />
+                                        <span>
+                                            <i class="flaticon2-search-1 text-muted"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end::Search Form-->
+                <!--end: Search Form-->
+                <!--begin: Datatable-->
+                <div class="datatable datatable-bordered datatable-head-custom" id="kt_datatable"></div>
+                <!--end: Datatable-->
+            </div>
+        </div>
+        <!--end::Card-->
+    </div>
+    <!--end::Content-->
+</div>
+<!--begin::Content Wrapper-->
+</div>
+<!--end::Demo Panel-->
+<!-- <script>var HOST_URL = "https://keenthemes.com/metronic/tools/preview";</script> -->
+<!--begin::Global Config(global config for global JS scripts)-->
+<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#fe3165", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#6993FF", "warning": "#FFA800", "danger": "#F64E60", "light": "#F3F6F9", "dark": "#212121" }, "light": { "white": "#ffffff", "primary": "#EEE5FF", "secondary": "#ECF0F3", "success": "#C9F7F5", "info": "#E1E9FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#212121", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" } }, "font-family": "Poppins" };</script>
+<!--end::Global Config-->
+<!--begin::Global Theme Bundle(used by all pages)-->
+<script src="/plugins/global/plugins.bundle.js?v=7.0.3"></script>
+<script src="/plugins/custom/prismjs/prismjs.bundle.js?v=7.0.3"></script>
+<script src="/javascripts/scripts.bundle.js?v=7.0.3"></script>
+<!--end::Global Theme Bundle-->
+<!--begin::Page Scripts(used by this page)-->
+<script>var operation = "employee" </script>
+<script src="/javascripts/datatables/employee.js"></script>
